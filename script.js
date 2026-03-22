@@ -88,7 +88,7 @@ const publicationGroups = [
     ],
   },
   {
-    title: "Preprints and working papers",
+    title: "Preprints, working papers, and theses",
     items: [
       {
         title: "Text-Mining Insights and Students' Perceptions on Generative AI Use in Research",
@@ -139,7 +139,7 @@ const publicationGroups = [
       },
       {
         title: "Incident Response Information System Using Web and SMS Platforms",
-        meta: "IHERF 2016",
+        meta: "Thesis (M.I.T.) - Angeles University Foundation, 2021",
       },
     ],
   },
