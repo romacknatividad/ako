@@ -5,25 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="A personal profile CV and portfolio showcasing research papers, professional background, projects, hobbies, and photos."
+      content="A minimalist personal profile CV and portfolio showcasing research papers, professional background, projects, hobbies, and photos."
     />
-    <title>Profile CV | Portfolio</title>
+    <title>Romack Natividad | Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Noto+Serif+JP:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="ambient ambient-left"></div>
-    <div class="ambient ambient-right"></div>
-
     <header class="topbar">
       <a class="brand" href="#home">
-        <span class="brand-mark">A</span>
-        <span class="brand-text">Profile CV</span>
+        <span class="brand-mark">RN</span>
+        <span class="brand-text">Romack Natividad</span>
       </a>
       <nav class="nav">
         <a href="#about">About</a>
@@ -37,37 +34,21 @@
     <main id="home">
       <section class="hero section">
         <div class="hero-copy reveal">
-          <p class="eyebrow">Researcher • Builder • Storyteller</p>
-          <h1>Your professional life, academic work, and personal side in one place.</h1>
+          <p class="eyebrow">Researcher / Builder / Writer</p>
+          <h1>Your work, background, and visual archive in one quiet space.</h1>
           <p class="lede">
-            This portfolio brings together your papers, pre-prints, articles, career history,
-            selected projects, hobbies, and photos in a clean profile format that feels like a
-            living CV.
+            A minimalist portfolio for research papers, professional history, selected projects,
+            hobbies, and photographs.
           </p>
           <div class="hero-actions">
             <a class="button primary" href="#research">Explore work</a>
             <a class="button secondary" href="#contact">Contact</a>
           </div>
-
-          <dl class="stats">
-            <div>
-              <dt>Publications</dt>
-              <dd>13</dd>
-            </div>
-            <div>
-              <dt>Projects</dt>
-              <dd>8</dd>
-            </div>
-            <div>
-              <dt>Reads</dt>
-              <dd>11,566</dd>
-            </div>
-          </dl>
         </div>
 
         <aside class="profile-card reveal">
           <div class="profile-portrait" aria-hidden="true">
-            <span>Photo</span>
+            <span>Portrait</span>
           </div>
           <div class="profile-meta">
             <p class="name">Your Name</p>
@@ -85,18 +66,14 @@
       <section id="about" class="section split reveal">
         <div>
           <p class="section-label">About</p>
-          <h2>Professional background with a personal voice.</h2>
+          <h2>Professional background.</h2>
         </div>
         <div class="content-panel">
           <p>
             Write a concise summary of your current role, areas of expertise, education, and the
-            themes that connect your work. This section can highlight your research interests,
-            industry experience, and what you care about professionally.
+            themes that connect your work.
           </p>
-          <p>
-            A strong portfolio works well when it is both academic and human. It shows what you have
-            done, what you are building, and a little of what inspires you outside work.
-          </p>
+          <p>The tone here can stay formal, restrained, and clear.</p>
         </div>
       </section>
 
@@ -104,12 +81,11 @@
         <div class="section-heading">
           <div>
             <p class="section-label">Research</p>
-            <h2>Selected papers, articles, and pre-prints.</h2>
+            <h2>Selected research output.</h2>
           </div>
           <p class="section-note">
             The public profile reports 13 publications, but only 11 titles were visible in the
-            public snapshot I fetched, so those are the entries shown here. The layout supports
-            publication type, year, venue, and links.
+            public snapshot I fetched.
           </p>
         </div>
         <div id="publications" class="grid cards"></div>
@@ -118,7 +94,7 @@
       <section id="experience" class="section split reveal">
         <div>
           <p class="section-label">Experience</p>
-          <h2>Professional background.</h2>
+          <h2>Work history.</h2>
         </div>
         <div class="timeline" id="experience-list"></div>
       </section>
@@ -127,12 +103,9 @@
         <div class="section-heading">
           <div>
             <p class="section-label">Projects</p>
-            <h2>Selected work and side projects.</h2>
+            <h2>Selected projects.</h2>
           </div>
-          <p class="section-note">
-            Include experiments, collaborations, technical builds, or community projects that show
-            range.
-          </p>
+          <p class="section-note">Experiments, collaborations, technical builds, or community work.</p>
         </div>
         <div id="projects-grid" class="grid cards"></div>
       </section>
@@ -140,7 +113,7 @@
       <section class="section split reveal">
         <div>
           <p class="section-label">Hobbies</p>
-          <h2>What you enjoy outside the formal CV.</h2>
+          <h2>Outside work.</h2>
         </div>
         <div id="hobbies" class="chips"></div>
       </section>
@@ -149,12 +122,9 @@
         <div class="section-heading">
           <div>
             <p class="section-label">Gallery</p>
-            <h2>Pictures and visual highlights.</h2>
+            <h2>Images.</h2>
           </div>
-          <p class="section-note">
-            Use this area for headshots, event photos, travel shots, lab scenes, or project
-            snapshots.
-          </p>
+          <p class="section-note">Headshots, event photos, travel shots, lab scenes, or project snapshots.</p>
         </div>
         <div id="gallery-grid" class="gallery"></div>
       </section>
@@ -163,7 +133,7 @@
         <div class="contact-panel">
           <div>
             <p class="section-label">Contact</p>
-            <h2>Make it easy to reach you.</h2>
+            <h2>Contact.</h2>
           </div>
           <div class="contact-links">
             <a href="mailto:you@example.com">you@example.com</a>
@@ -175,7 +145,7 @@
     </main>
 
     <footer class="footer">
-      <p>Built as a clean, editable profile CV and portfolio.</p>
+      <p>Minimal profile CV and portfolio.</p>
     </footer>
 
     <script src="script.js"></script>
