@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Gallery page for Romack Natividad, with spacious placeholders for photos."
+    />
+    <title>Romack Natividad | Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Noto+Serif+JP:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">RN</span>
+        <span class="brand-text">Romack Natividad</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html">About</a>
+        <a href="publications.html">Publications</a>
+        <a href="cv.html">CV</a>
+        <a href="projects.html">Projects</a>
+        <a href="gallery.html" aria-current="page">Gallery</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section hero">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Images</p>
+          <h1>Gallery.</h1>
+          <p class="lede">
+            Space reserved for headshots, conference photos, project snapshots, and personal
+            images.
+          </p>
+        </div>
+        <aside class="profile-card reveal">
+          <div class="profile-portrait" aria-hidden="true">
+            <span>Photos</span>
+          </div>
+          <div class="profile-meta">
+            <p class="name">Visual archive</p>
+            <p class="title">Replace these placeholders with your own photos</p>
+            <p class="location">Clean, open presentation</p>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section reveal">
+        <div id="gallery-grid" class="gallery"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p><a href="publications.html">Publications</a> · <a href="cv.html">CV</a> · <a href="projects.html">Projects</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

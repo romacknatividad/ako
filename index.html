@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="A minimalist personal profile CV and portfolio showcasing research papers, professional background, projects, hobbies, and photos."
+      content="Romack Natividad's minimalist portfolio and CV, inspired by a spacious editorial layout."
     />
-    <title>Romack Natividad | Portfolio</title>
+    <title>Romack Natividad | About</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,21 +18,21 @@
   </head>
   <body>
     <header class="topbar">
-      <a class="brand" href="#home">
+      <a class="brand" href="index.html">
         <span class="brand-mark">RN</span>
         <span class="brand-text">Romack Natividad</span>
       </a>
       <nav class="nav">
-        <a href="#about">About</a>
-        <a href="#research">Research</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#gallery">Gallery</a>
+        <a href="index.html" aria-current="page">About</a>
+        <a href="publications.html">Publications</a>
+        <a href="cv.html">CV</a>
+        <a href="projects.html">Projects</a>
+        <a href="gallery.html">Gallery</a>
       </nav>
     </header>
 
-    <main id="home">
-      <section class="hero section">
+    <main>
+      <section class="section hero">
         <div class="hero-copy reveal">
           <p class="eyebrow">IT Consultant / Software Engineer</p>
           <h1>Romack L. Natividad, MIT</h1>
@@ -41,8 +41,8 @@
             application development, Linux-based stacks, AWS, and research-driven software work.
           </p>
           <div class="hero-actions">
-            <a class="button primary" href="#research">Explore work</a>
-            <a class="button secondary" href="#contact">Contact</a>
+            <a class="button primary" href="publications.html">View publications</a>
+            <a class="button secondary" href="cv.html">View CV</a>
           </div>
         </div>
 
@@ -56,23 +56,30 @@
             <p class="location">Apalit, Pampanga, Central Luzon, Philippines</p>
           </div>
           <div class="profile-links">
-            <a href="#" aria-label="LinkedIn profile">LinkedIn</a>
-            <a href="#" aria-label="Google Scholar profile">Scholar</a>
-            <a href="#" aria-label="GitHub profile">GitHub</a>
+            <a href="mailto:romacknatividad@gmail.com">Email</a>
+            <a
+              href="https://drive.google.com/file/d/1XUiBuCfFqcg6ziyeZ5r28GScBcS6tUC1/view?usp=sharing"
+              >CV PDF</a
+            >
           </div>
         </aside>
       </section>
 
-      <section id="about" class="section split reveal">
-        <div>
-          <p class="section-label">About</p>
-          <h2>Professional summary.</h2>
+      <section class="section reveal">
+        <div class="section-heading">
+          <div>
+            <p class="section-label">Profile</p>
+            <h2>Professional summary.</h2>
+          </div>
+          <p class="section-note">
+            A concise overview of your current work, research direction, and teaching background.
+          </p>
         </div>
         <div class="content-panel">
           <p>
-            I have extensive experience in backend web application development and have worked with
-            PHP, Laravel, Python, Flask, NodeJS, ExpressJS, NextJS, Angular, ReactJS, AWS, Linux,
-            Git, and related tooling across product and service companies.
+            I have extensive experience in backend web application development and have worked
+            with PHP, Laravel, Python, Flask, NodeJS, ExpressJS, NextJS, Angular, ReactJS, AWS,
+            Linux, Git, and related tooling across product and service companies.
           </p>
           <p>
             I value software quality, clear communication, mentoring, and practical engineering
@@ -81,101 +88,23 @@
         </div>
       </section>
 
-      <section class="section split reveal">
-        <div>
-          <p class="section-label">Expertise</p>
-          <h2>Tools and strengths.</h2>
-        </div>
-        <div>
-          <div id="expertise" class="chips"></div>
-        </div>
-      </section>
-
-      <section id="research" class="section reveal">
+      <section class="section reveal">
         <div class="section-heading">
           <div>
-            <p class="section-label">Research</p>
-            <h2>Publications and papers.</h2>
+            <p class="section-label">Notes</p>
+            <h2>Selected highlights.</h2>
           </div>
-          <p class="section-note">
-            Published papers, conference work, preprints, and unpublished research entries from
-            the CV.
-          </p>
+          <p class="section-note">A few key points from the CV, shown with plenty of space.</p>
         </div>
-        <div id="publications" class="grid cards"></div>
-      </section>
-
-      <section id="experience" class="section split reveal">
-        <div>
-          <p class="section-label">Experience</p>
-          <h2>Work history.</h2>
-        </div>
-        <div class="timeline" id="experience-list"></div>
-      </section>
-
-      <section class="section split reveal">
-        <div>
-          <p class="section-label">Teaching</p>
-          <h2>Academic teaching experience.</h2>
-        </div>
-        <div class="timeline" id="teaching-list"></div>
-      </section>
-
-      <section class="section split reveal">
-        <div>
-          <p class="section-label">Education</p>
-          <h2>Academic background.</h2>
-        </div>
-        <div class="timeline" id="education-list"></div>
-      </section>
-
-      <section id="projects" class="section reveal">
-        <div class="section-heading">
-          <div>
-            <p class="section-label">Projects</p>
-            <h2>Selected projects.</h2>
-          </div>
-          <p class="section-note">Systems and product work from your professional and research career.</p>
-        </div>
-        <div id="projects-grid" class="grid cards"></div>
-      </section>
-
-      <section class="section split reveal">
-        <div>
-          <p class="section-label">Hobbies</p>
-          <h2>Interests.</h2>
-        </div>
-        <div id="hobbies" class="chips"></div>
-      </section>
-
-      <section id="gallery" class="section reveal">
-        <div class="section-heading">
-          <div>
-            <p class="section-label">Gallery</p>
-            <h2>Images.</h2>
-          </div>
-          <p class="section-note">Headshots, event photos, travel shots, lab scenes, or project snapshots.</p>
-        </div>
-        <div id="gallery-grid" class="gallery"></div>
-      </section>
-
-      <section id="contact" class="section reveal">
-        <div class="contact-panel">
-          <div>
-            <p class="section-label">Contact</p>
-            <h2>Contact.</h2>
-          </div>
-          <div class="contact-links">
-            <a href="mailto:romacknatividad@gmail.com">romacknatividad@gmail.com</a>
-            <a href="https://drive.google.com/file/d/1XUiBuCfFqcg6ziyeZ5r28GScBcS6tUC1/view?usp=sharing">CV PDF</a>
-            <a href="#">Download portfolio</a>
-          </div>
-        </div>
+        <div id="highlights" class="highlight-grid"></div>
       </section>
     </main>
 
     <footer class="footer">
-      <p>Minimal profile CV and portfolio.</p>
+      <p>
+        <a href="publications.html">Publications</a> · <a href="cv.html">CV</a> ·
+        <a href="projects.html">Projects</a> · <a href="gallery.html">Gallery</a>
+      </p>
     </footer>
 
     <script src="script.js"></script>

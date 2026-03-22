@@ -1,27 +1,33 @@
-# Profile CV / Portfolio
+# Minimal Portfolio
 
-This is a static portfolio starter for a personal profile CV.
+This is a multi-page personal portfolio for Romack Natividad.
 
-## What it includes
+## Pages
 
-- Research papers, articles, and pre-prints
-- Professional background
-- Projects
-- Hobbies
-- Picture gallery
+- `index.html` - about page
+- `publications.html` - publications and papers
+- `cv.html` - professional CV
+- `projects.html` - selected projects and interests
+- `gallery.html` - photo gallery placeholders
 
-## How to customize
+## Editing
 
-Edit `script.js` to replace the placeholder content with your own:
+Most page content is in `script.js`. Edit the following arrays to update the site:
 
-- `publications`
+- `highlights`
+- `expertise`
+- `publicationGroups`
 - `experience`
+- `teaching`
+- `education`
 - `projects`
-- `hobbies`
+- `interests`
 - `gallery`
 
-Update the name, links, and contact details in `index.html`.
+## Design
+
+The layout uses generous spacing, simple borders, and a quiet editorial feel inspired by minimalist academic portfolios.
 
 ## Run locally
 
-Open `index.html` directly in a browser, or serve the folder with any static server.
+Open any HTML file in a browser or serve the folder with a static server.

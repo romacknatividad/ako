@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Projects page for Romack Natividad, with selected systems and interests."
+    />
+    <title>Romack Natividad | Projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Noto+Serif+JP:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">RN</span>
+        <span class="brand-text">Romack Natividad</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html">About</a>
+        <a href="publications.html">Publications</a>
+        <a href="cv.html">CV</a>
+        <a href="projects.html" aria-current="page">Projects</a>
+        <a href="gallery.html">Gallery</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section hero">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Systems</p>
+          <h1>Selected projects.</h1>
+          <p class="lede">
+            Research systems, academic tools, and practical software work with generous spacing and
+            a restrained presentation.
+          </p>
+        </div>
+        <aside class="profile-card reveal">
+          <div class="profile-portrait" aria-hidden="true">
+            <span>Work</span>
+          </div>
+          <div class="profile-meta">
+            <p class="name">Research and product systems</p>
+            <p class="title">Academic and professional builds</p>
+            <p class="location">Research-led software projects</p>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section reveal">
+        <div id="projects-grid" class="grid"></div>
+      </section>
+
+      <section class="section split reveal">
+        <div>
+          <p class="section-label">Interests</p>
+          <h2>Outside work.</h2>
+        </div>
+        <div id="interests" class="chips"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p><a href="publications.html">Publications</a> · <a href="cv.html">CV</a> · <a href="gallery.html">Gallery</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
