@@ -52,38 +52,100 @@ const expertise = [
   "AI-assisted software engineering",
 ];
 
+const scholarSearchLink = (title) =>
+  `https://scholar.google.com/scholar?q=${encodeURIComponent(title)}`;
+
+const rgSearchLink = (title) =>
+  `https://www.researchgate.net/search/publication?q=${encodeURIComponent(title)}`;
+
 const publicationGroups = [
   {
     title: "Published and conference papers",
     items: [
       {
+        year: "2026",
+        source: "Journal article",
         title:
           "Empirical Evaluation of a Scholarship Application Information System Using the DeLone and McLean I.S. Success Model",
-        meta: "International Journal of Computing Sciences Research, 2026",
+        meta: "International Journal of Computing Sciences Research",
+        summary:
+          "A scholarship system study measured against the DeLone and McLean IS Success Model.",
+        links: [{ label: "Search", href: scholarSearchLink("Empirical Evaluation of a Scholarship Application Information System Using the DeLone and McLean I.S. Success Model") }],
       },
       {
+        year: "2025",
+        source: "Journal article",
         title: "Evaluation of Social Services Information System using DeLone McLean IS success model",
-        meta: "International Journal of Computing Sciences Research, 2025",
+        meta: "International Journal of Computing Sciences Research",
+        summary:
+          "A social services information system evaluated for usability, reliability, and productivity.",
+        links: [
+          {
+            label: "Issue page",
+            href: "https://stepacademic.net/ijcsr/issue/view/26",
+          },
+          {
+            label: "DOI",
+            href: "https://doi.org/10.25147/ijcsr.2017.001.1.248",
+          },
+        ],
       },
       {
+        year: "2022",
+        source: "Conference paper",
         title:
           "Examining Employees' Technology Acceptance of Web-based Attendance Management System With Face Recognition and QR Code Features for La Verdad Christian College",
         meta: "IRCITE 2022",
+        summary:
+          "A contactless attendance workflow explored through a technology acceptance lens.",
+        links: [{ label: "Search", href: scholarSearchLink("Examining Employees' Technology Acceptance of Web-based Attendance Management System With Face Recognition and QR Code Features for La Verdad Christian College") }],
       },
       {
+        year: "2019",
+        source: "Conference paper",
         title:
           "Into the Campus: Creating an Android-Based Interactive Virtual Tour of La Verdad Christian College - Apalit using Unity 3D",
-        meta: "2019",
+        meta: "Innovatus 2019",
+        summary: "An Android virtual tour built with Unity 3D and 3D mapping for campus exploration.",
+        links: [
+          {
+            label: "Open article",
+            href: "https://innovatus-pub.github.io/abstractpublications_archive/2019a/paper20.html",
+          },
+          {
+            label: "PDF",
+            href: "https://innovatus-pub.github.io/abstractpublications_archive/2019a/paper20_pdf.pdf",
+          },
+        ],
       },
       {
+        year: "2019",
+        source: "Conference paper",
         title:
           "Implementing Document Management System (DMS) Technology in Barangay Paligui, Apalit, Pampanga",
-        meta: "INNOVATUS / 2019",
+        meta: "Innovatus 2019",
+        summary: "A barangay records and service workflow project focused on document handling.",
+        links: [
+          {
+            label: "PDF",
+            href: "https://zenodo.org/records/5209763/files/paper_19.pdf",
+          },
+          {
+            label: "Search",
+            href: rgSearchLink(
+              "Implementing Document Management System (DMS) Technology in Barangay Paligui, Apalit, Pampanga"
+            ),
+          },
+        ],
       },
       {
+        year: "2022",
+        source: "Proceedings",
         title:
           "BSIS Capstone Projects Compiled by Natividad, R. (2022) - Information Systems: Undergraduate Research Colloquium Proceedings",
-        meta: "7 Eyes Productions, 2022",
+        meta: "7 Eyes Productions",
+        summary: "A compiled research proceedings entry for BSIS capstone projects.",
+        links: [{ label: "Search", href: scholarSearchLink("BSIS Capstone Projects Compiled by Natividad, R. (2022) - Information Systems: Undergraduate Research Colloquium Proceedings") }],
       },
     ],
   },
@@ -91,55 +153,108 @@ const publicationGroups = [
     title: "Preprints, working papers, and theses",
     items: [
       {
+        year: "2026",
+        source: "Conference paper",
         title: "Text-Mining Insights and Students' Perceptions on Generative AI Use in Research",
         meta: "ICETI 2026",
+        summary: "A study on student perceptions and text-mining insights around generative AI in research.",
+        links: [{ label: "Search", href: scholarSearchLink("Text-Mining Insights and Students' Perceptions on Generative AI Use in Research") }],
       },
       {
+        year: "2025",
+        source: "Conference paper",
         title:
           "Using the Technology Acceptance Model in Understanding the Usage of Web-based Document Management System With SMS Notification for the Bureau of Fire Protection in Apalit Pampanga",
         meta: "ICITE 2023",
+        summary: "A web-based DMS for BFP work with SMS notification support and user acceptance analysis.",
+        links: [{ label: "Search", href: scholarSearchLink("Using the Technology Acceptance Model in Understanding the Usage of Web-based Document Management System With SMS Notification for the Bureau of Fire Protection in Apalit Pampanga") }],
       },
       {
+        year: "2024",
+        source: "Review",
         title:
           "Review of 'Artificial Intelligence-Oriented Software Engineering (AIOSE): Challenges, Opportunities and New Directions' by Faruk, et al.",
         meta: "2024",
+        summary: "A review note on the opportunities and challenges of AI-oriented software engineering.",
+        links: [{ label: "Search", href: scholarSearchLink("Review of Artificial Intelligence-Oriented Software Engineering (AIOSE): Challenges, Opportunities and New Directions by Faruk et al.") }],
       },
       {
+        year: "2024",
+        source: "Review",
         title:
           "A Literature Review of Quantum Algorithms, Programming, and Simulation Tools: Initiatives of the Philippine Computing Community for the Next Paradigm Shift",
         meta: "2024",
+        summary: "A literature review on quantum computing tools and the Philippine computing community.",
+        links: [{ label: "Search", href: scholarSearchLink("A Literature Review of Quantum Algorithms, Programming, and Simulation Tools: Initiatives of the Philippine Computing Community for the Next Paradigm Shift") }],
       },
       {
+        year: "2024",
+        source: "Review",
         title:
           "Review of the paper 'A Survey of Post-Quantum Cryptography: Start of a New Race' by Duc-Thuan et al.",
         meta: "2024",
+        summary: "A review note on post-quantum cryptography and the next shift in secure systems.",
+        links: [{ label: "Search", href: scholarSearchLink("Review of the paper A Survey of Post-Quantum Cryptography: Start of a New Race by Duc-Thuan et al.") }],
       },
       {
+        year: "2024",
+        source: "Preprint",
         title:
           "Avoiding Software Piracy Through Appreciation of Software License Models and Software Asset Management Practices",
         meta: "2024",
+        summary: "A preprint about software licensing, compliance, and software asset management.",
+        links: [
+          {
+            label: "Open on RG",
+            href: "https://www.researchgate.net/publication/383693557_Avoiding_Software_Piracy_Through_Appreciation_of_Software_License_Models_and_Software_Asset_Management_Practices",
+          },
+          {
+            label: "Search",
+            href: scholarSearchLink("Avoiding Software Piracy Through Appreciation of Software License Models and Software Asset Management Practices"),
+          },
+        ],
       },
       {
+        year: "2024",
+        source: "Preprint",
         title: "Appreciating the Decidability Topic in the Theory of Computations Course",
         meta: "2024",
+        summary: "A teaching-oriented preprint that makes decidability easier to read and discuss.",
+        links: [{ label: "Search", href: scholarSearchLink("Appreciating the Decidability Topic in the Theory of Computations Course") }],
       },
       {
+        year: "2023",
+        source: "Conference paper",
         title:
           "DESIGN AND SOFTWARE QUALITY ASSESSMENT OF AN ENROLLMENT PAYMENT VALIDATION SYSTEM FOR LVCS ACCOUNTING DEPARTMENT WITH VERYFI OCR AND XERO INTEGRATION",
         meta: "ICITE 2023",
+        summary: "A software quality assessment for an enrollment payment validation system with OCR and Xero integration.",
+        links: [{ label: "Search", href: scholarSearchLink("DESIGN AND SOFTWARE QUALITY ASSESSMENT OF AN ENROLLMENT PAYMENT VALIDATION SYSTEM FOR LVCS ACCOUNTING DEPARTMENT WITH VERYFI OCR AND XERO INTEGRATION") }],
       },
       {
+        year: "2023",
+        source: "Preprint",
         title: "Mga Teorya, Balangkas, at Literatura Para sa Capstone Project",
         meta: "2023",
+        summary: "A Filipino-language preprint for capstone theory, framework, and literature guidance.",
+        links: [{ label: "Search", href: scholarSearchLink("Mga Teorya, Balangkas, at Literatura Para sa Capstone Project") }],
       },
       {
+        year: "2018",
+        source: "Preprint",
         title:
           "Increasing Admissions Department Efficiency Using An Online Student Enrolment System For La Verdad Christian College",
         meta: "2018",
+        summary: "An early online enrollment system proposal for admissions workflow efficiency.",
+        links: [{ label: "Search", href: scholarSearchLink("Increasing Admissions Department Efficiency Using An Online Student Enrolment System For La Verdad Christian College") }],
       },
       {
+        year: "2021",
+        source: "Thesis",
         title: "Incident Response Information System Using Web and SMS Platforms",
         meta: "Thesis (M.I.T.) - Angeles University Foundation, 2021",
+        summary: "A thesis project on incident reporting and response through web and SMS platforms.",
+        links: [{ label: "Search", href: scholarSearchLink("Incident Response Information System Using Web and SMS Platforms Romack Natividad") }],
       },
     ],
   },
@@ -337,14 +452,32 @@ function timelineTemplate(item) {
 function publicationGroupTemplate(group) {
   return `
     <section class="publication-group">
-      <h3>${group.title}</h3>
+      <div class="publication-group-head">
+        <p class="section-label">Archive</p>
+        <h3>${group.title}</h3>
+      </div>
       <div class="publication-list">
         ${group.items
           .map(
             (item) => `
               <article class="publication-item">
-                <p class="publication-title">${item.title}</p>
-                <p class="publication-meta">${item.meta}</p>
+                <div class="publication-rail">
+                  <span class="publication-year">${item.year}</span>
+                  <span class="publication-source">${item.source}</span>
+                </div>
+                <div class="publication-copy">
+                  <p class="publication-title">${item.title}</p>
+                  <p class="publication-meta">${item.meta}</p>
+                  <p class="publication-summary">${item.summary}</p>
+                  <div class="publication-links">
+                    ${item.links
+                      .map(
+                        (link) =>
+                          `<a class="publication-link" href="${link.href}" target="_blank" rel="noreferrer noopener">${link.label}</a>`
+                      )
+                      .join("")}
+                  </div>
+                </div>
               </article>
             `
           )
