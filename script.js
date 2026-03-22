@@ -1,150 +1,336 @@
+const expertise = [
+  "MySQL",
+  "PostgreSQL",
+  "MongoDB",
+  "Firebase",
+  "ElasticSearch",
+  "Redis",
+  "PHP",
+  "Laravel",
+  "Python",
+  "Flask",
+  "NodeJS",
+  "ExpressJS",
+  "NextJS",
+  "Angular",
+  "JavaScript",
+  "TypeScript",
+  "ReactJS",
+  "HTML5",
+  "CSS",
+  "AWS",
+  "Linux",
+  "Git",
+  "Bash",
+  "Figma",
+  "Photoshop",
+  "Jira",
+  "Redmine",
+  "GitLab",
+  "GitHub",
+  "ClickUp",
+  "Asana",
+  "AI-assisted software engineering",
+];
+
 const publications = [
   {
-    type: "Pre-print",
-    title: "Appreciating the Decidability Topic in the Theory of Computations Course",
-    description:
-      "A teaching-oriented preprint focused on making decidability easier to understand in a theory of computation course.",
-    meta: "May 2024 · Preprint",
-  },
-  {
-    type: "Pre-print",
+    type: "Publication",
     title:
-      "Avoiding Software Piracy Through Appreciation of Software License Models and Software Asset Management Practices",
+      "Empirical Evaluation of a Scholarship Application Information System Using the DeLone and McLean I.S. Success Model",
     description:
-      "Discusses software licensing, legal compliance, and the importance of honoring the work of software teams and vendors.",
-    meta: "May 2024 · Full text available",
+      "International Journal of Computing Sciences Research, 2026. Best Research Paper Oral Presentation in Information Systems Category.",
+    meta: "2026",
   },
   {
-    type: "Pre-print",
+    type: "Publication",
+    title: "Evaluation of Social Services Information System using DeLone McLean IS success model",
+    description:
+      "International Journal of Computing Sciences Research, 2025, evaluating a centralized social services information system.",
+    meta: "2025",
+  },
+  {
+    type: "Publication",
+    title:
+      "Examining Employees' Technology Acceptance of Web-based Attendance Management System With Face Recognition and QR Code Features for La Verdad Christian College",
+    description:
+      "Conference paper presented in 2022 on contactless attendance management for employee monitoring.",
+    meta: "2022",
+  },
+  {
+    type: "Publication",
+    title:
+      "Into the Campus: Creating an Android-Based Interactive Virtual Tour of La Verdad Christian College - Apalit using Unity 3D",
+    description:
+      "An interactive virtual tour built with Unity 3D to showcase the campus environment.",
+    meta: "2019",
+  },
+  {
+    type: "Publication",
+    title:
+      "Implementing Document Management System (DMS) Technology in Barangay Paligui, Apalit, Pampanga",
+    description:
+      "Conference paper on improving government document handling and service quality in a barangay setting.",
+    meta: "2019",
+  },
+  {
+    type: "Publication",
+    title:
+      "BSIS Capstone Projects Compiled by Natividad, R. (2022) - Information Systems: Undergraduate Research Colloquium Proceedings",
+    description:
+      "A compiled set of capstone projects published in the undergraduate research colloquium proceedings.",
+    meta: "2022",
+  },
+  {
+    type: "Paper",
+    title:
+      "Text-Mining Insights and Students' Perceptions on Generative AI Use in Research",
+    description:
+      "Best Research Paper entry for the International Conference on Educational Technology and Innovation 2026.",
+    meta: "2026",
+  },
+  {
+    type: "Paper",
+    title:
+      "Using the Technology Acceptance Model in Understanding the Usage of Web-based Document Management System With SMS Notification for the Bureau of Fire Protection in Apalit Pampanga",
+    description:
+      "Conference paper on a web-based document management system for a fire safety enforcement unit.",
+    meta: "2025",
+  },
+  {
+    type: "Paper",
+    title:
+      "Review of 'Artificial Intelligence-Oriented Software Engineering (AIOSE): Challenges, Opportunities and New Directions' by Faruk, et al.",
+    description: "A 2024 review paper focused on emerging AI-oriented software engineering themes.",
+    meta: "2024",
+  },
+  {
+    type: "Paper",
     title:
       "A Literature Review of Quantum Algorithms, Programming, and Simulation Tools: Initiatives of the Philippine Computing Community for the Next Paradigm Shift",
     description:
-      "A review of quantum computation topics, tools, and the Philippine computing community's role in the next paradigm shift.",
-    meta: "May 2024 · Full text available",
+      "A 2024 literature review covering quantum algorithms, programming, and simulation tools.",
+    meta: "2024",
   },
   {
-    type: "Conference",
+    type: "Paper",
     title:
-      "Using the Technology Acceptance Model in Understanding the Usage of Web-based Document Management System for the Fire Safety Enforcement Unit of the Bureau of Fire Protection",
-    description:
-      "Examines a web-based document management system with SMS notifications for a fire safety enforcement workflow.",
-    meta: "Nov 2023 · Conference paper",
+      "Review of the paper 'A Survey of Post-Quantum Cryptography: Start of a New Race' by Duc-Thuan et al.",
+    description: "A 2024 review of post-quantum cryptography research directions.",
+    meta: "2024",
   },
   {
-    type: "Conference",
+    type: "Paper",
+    title:
+      "Avoiding Software Piracy Through Appreciation of Software License Models and Software Asset Management Practices",
+    description:
+      "A 2024 preprint on software licensing, compliance, and asset management practices.",
+    meta: "2024",
+  },
+  {
+    type: "Paper",
+    title: "Appreciating the Decidability Topic in the Theory of Computations Course",
+    description: "A 2024 preprint aimed at making decidability easier to understand in class.",
+    meta: "2024",
+  },
+  {
+    type: "Paper",
     title:
       "DESIGN AND SOFTWARE QUALITY ASSESSMENT OF AN ENROLLMENT PAYMENT VALIDATION SYSTEM FOR LVCS ACCOUNTING DEPARTMENT WITH VERYFI OCR AND XERO INTEGRATION",
     description:
-      "A system study on validating enrollment payments with OCR and integration into Xero for accounting workflows.",
-    meta: "Nov 2023 · Conference paper",
+      "An applied systems paper on OCR-based payment validation and accounting integration.",
+    meta: "2023",
   },
   {
-    type: "Pre-print",
-    title: "MGA TEORYA, BALANGKAS, AT LITERATURA PARA SA CAPSTONE PROJECT",
+    type: "Paper",
+    title: "Mga Teorya, Balangkas, at Literatura Para sa Capstone Project",
     description:
-      "A Filipino-language preprint that helps structure capstone research using established theories and concepts.",
-    meta: "Nov 2023 · Preprint",
+      "A Filipino-language research support paper on theory, framework, and literature for capstone work.",
+    meta: "2023",
   },
   {
-    type: "Conference",
+    type: "Paper",
     title:
-      "EXAMINING EMPLOYEES' TECHNOLOGY ACCEPTANCE OF WEB-BASED ATTENDANCE MANAGEMENT SYSTEM WITH FACE RECOGNITION AND QR CODE FEATURES FOR LA VERDAD CHRISTIAN COLLEGE",
+      "Increasing Admissions Department Efficiency Using An Online Student Enrolment System For La Verdad Christian College",
     description:
-      "Studies the adoption of a contactless attendance management system for employee monitoring.",
-    meta: "Apr 2022 · Conference paper",
+      "An earlier system proposal to improve admissions and enrollment workflow efficiency.",
+    meta: "2018",
   },
   {
-    type: "Article",
-    title:
-      "Into the Campus: Creating an Android-Based Interactive Virtual Tour of La Verdad Christian College – Apalit using Unity 3D",
-    description:
-      "Describes an Android-based virtual tour built with Unity 3D and Google SketchUp to showcase the campus experience.",
-    meta: "May 2019 · Article",
-  },
-  {
-    type: "Conference",
-    title: "IMPLEMENTING DOCUMENT MANAGEMENT SYSTEM (DMS) TECHNOLOGY IN BARANGAY PALIGUI, APALIT, PAMPANGA",
-    description:
-      "A records management project for a barangay setting aimed at improving service quality and document handling.",
-    meta: "Mar 2019 · Conference paper",
-  },
-  {
-    type: "Pre-print",
-    title:
-      "Increasing Admissions Department Efficiency Using An Online Student Enrolment System For La Verdad Christian College Bachelor of Science in Information Systems",
-    description:
-      "Proposes an online admissions and enrollment system to speed up student data processing and related workflows.",
-    meta: "Mar 2018 · Preprint",
-  },
-  {
-    type: "Thesis",
+    type: "Paper",
     title: "Incident Response Information System Using Web and SMS Platforms",
     description:
-      "An earlier thesis project focused on incident reporting, collaboration, and decision support through web and SMS tools.",
-    meta: "Jul 2016 · Thesis",
+      "A thesis project on incident reporting and response using web and SMS platforms.",
+    meta: "2016",
   },
 ];
 
 const experience = [
   {
-    role: "Current Position",
-    org: "Organization / Department",
-    period: "2024 - Present",
-    summary: "Describe your current responsibilities, focus areas, and the scope of your work.",
+    role: "Senior Software Engineer",
+    org: "Vesanique through Shore360",
+    period: "November 2020 - Present",
+    summary:
+      "PHP, Laravel, AWS, WordPress, and ReactJS/NextJS work focused on backend web applications and product support.",
   },
   {
-    role: "Previous Role",
-    org: "Previous Employer",
-    period: "2021 - 2024",
-    summary: "Mention achievements, leadership, research, product work, or collaborations.",
+    role: "I.T. Consultant",
+    org: "Disney Vacation Club through RCG Global Services",
+    period: "March 2019 - October 2020",
+    summary: "PHP, Angular, and AWS work in a consulting environment.",
   },
   {
-    role: "Education",
-    org: "University or Training Institution",
-    period: "2017 - 2021",
-    summary: "Include your degree, specialization, honors, or thesis topic.",
+    role: "Senior Software Engineer",
+    org: "ProLook Sports / QuickStrike",
+    period: "February 2017 - January 2019",
+    summary: "Backend engineering work for product and platform improvements in San Fernando, Pampanga.",
+  },
+  {
+    role: "Senior PHP Developer",
+    org: "Flexion Technology",
+    period: "May 2016 - March 2017",
+    summary: "PHP, Laravel, and AWS development for software delivery in Makati City.",
+  },
+  {
+    role: "Software Developer",
+    org: "Lifetrack Medical Systems",
+    period: "January 2016 - April 2016",
+    summary: "Built software solutions using PHP, JavaScript, and AWS in Bonifacio Global City.",
+  },
+  {
+    role: "Software Engineer",
+    org: "ProLook Sports / QuickStrike",
+    period: "May 2015 - November 2015",
+    summary: "PHP, Laravel, and AWS development work in San Fernando, Pampanga.",
+  },
+  {
+    role: "Software Engineer",
+    org: "Salarium",
+    period: "November 2014 - April 2015",
+    summary: "Worked with PHP, CodeIgniter, Cohesion, and AWS in Makati City.",
+  },
+  {
+    role: "Software Engineer",
+    org: "Freelancer.com",
+    period: "January 2013 - March 2014",
+    summary: "Independent PHP and AWS work for client projects.",
+  },
+  {
+    role: "Junior Java Developer",
+    org: "Katana Techworks",
+    period: "2008",
+    summary: "Java and PostgreSQL work in Quezon City.",
+  },
+  {
+    role: "Junior PHP Developer",
+    org: "Katana Tech Works",
+    period: "2005 - 2006",
+    summary: "PHP and MySQL development in Quezon City.",
+  },
+  {
+    role: "Junior ASP Developer",
+    org: "AnXa Limited",
+    period: "2004 - 2005",
+    summary: "Classic ASP development in Alabang, Muntinlupa.",
+  },
+];
+
+const teaching = [
+  {
+    role: "Assistant Lecturer (Part-time)",
+    org: "Angeles University Foundation",
+    period: "February 2022 - December 2024",
+    summary:
+      "Taught Integrative Programming and Technologies and Web Application Development courses in Angeles City, Pampanga.",
+  },
+  {
+    role: "Lecturer and BS Information Systems Program Chair",
+    org: "La Verdad Christian College",
+    period: "June 2006 - January 2024",
+    summary:
+      "Taught Information Systems Capstone Projects and supported research mentoring in Apalit, Pampanga.",
+  },
+];
+
+const education = [
+  {
+    role: "Master of Science in Computer Science (ongoing)",
+    org: "Don Mariano Marcos Memorial State University",
+    period: "2025 - Present",
+    summary: "A graduate program in Agoo, La Union.",
+  },
+  {
+    role: "Master in Information Technology",
+    org: "Angeles University Foundation",
+    period: "2014 - 2016",
+    summary: "Graduate studies in Angeles, Pampanga.",
+  },
+  {
+    role: "B.S. in Information Technology",
+    org: "FEU Diliman (formerly FEU-FERN College)",
+    period: "2000 - 2003",
+    summary: "Undergraduate degree completed in Quezon City.",
   },
 ];
 
 const projects = [
   {
-    type: "Project",
-    title: "Project Title One",
+    type: "System",
+    title: "Scholarship Application Information System",
     description:
-      "A product, research tool, dashboard, or creative project with a measurable impact.",
-    meta: "Role: Founder / Contributor · Tools: Stack or methods used",
+      "A scholarship system evaluated with the DeLone and McLean I.S. Success Model.",
+    meta: "Research + development",
   },
   {
-    type: "Collaboration",
-    title: "Project Title Two",
+    type: "System",
+    title: "Social Services Information System",
     description:
-      "Highlight a team effort, open-source contribution, or multidisciplinary initiative.",
-    meta: "Role: Collaborator · Outcome: what was launched or improved",
+      "A centralized social services workflow and records system for public service management.",
+    meta: "Research + implementation",
   },
   {
-    type: "Experiment",
-    title: "Project Title Three",
+    type: "System",
+    title: "Web-based Attendance Management System",
     description:
-      "Use this for prototypes, side experiments, or visual work that shows your curiosity.",
-    meta: "Role: Builder · Notes: research question or inspiration",
+      "A contactless attendance solution using face recognition and QR code features.",
+    meta: "Laravel / HR workflow",
+  },
+  {
+    type: "System",
+    title: "Enrollment Payment Validation System",
+    description:
+      "OCR-based payment validation integrated with Xero for accounting workflow support.",
+    meta: "Veryfi OCR / Xero",
+  },
+  {
+    type: "System",
+    title: "Interactive Virtual Tour",
+    description:
+      "An Android-based virtual tour of La Verdad Christian College built with Unity 3D.",
+    meta: "Unity 3D / Android",
+  },
+  {
+    type: "System",
+    title: "Document Management System",
+    description:
+      "Document management work for barangay service and record handling improvements.",
+    meta: "Public sector workflow",
   },
 ];
 
 const hobbies = [
-  "Reading and note-taking",
-  "Photography",
-  "Writing essays and reflections",
-  "Travel and cultural exploration",
-  "Running or fitness",
-  "Music, films, or creative hobbies",
+  "Computing research",
+  "Theses, news, books, and magazines",
+  "Music of different genres",
+  "Arts and cultures",
 ];
 
 const gallery = [
-  "Conference / Event",
-  "Portrait / Headshot",
-  "Field / Lab",
-  "Project Snapshot",
-  "Travel / Hobby",
+  "Conference",
+  "Portrait",
+  "Teaching",
+  "Project Work",
+  "Research",
 ];
 
 function cardTemplate(item) {
@@ -158,10 +344,48 @@ function cardTemplate(item) {
   `;
 }
 
+document.getElementById("expertise").innerHTML = expertise
+  .map((item) => `<span class="chip">${item}</span>`)
+  .join("");
+
 document.getElementById("publications").innerHTML = publications.map(cardTemplate).join("");
 document.getElementById("projects-grid").innerHTML = projects.map(cardTemplate).join("");
 
 document.getElementById("experience-list").innerHTML = experience
+  .map(
+    (item) => `
+      <article class="timeline-item">
+        <header>
+          <div>
+            <h3 class="role">${item.role}</h3>
+            <p>${item.org}</p>
+          </div>
+          <span class="period">${item.period}</span>
+        </header>
+        <p>${item.summary}</p>
+      </article>
+    `
+  )
+  .join("");
+
+document.getElementById("teaching-list").innerHTML = teaching
+  .map(
+    (item) => `
+      <article class="timeline-item">
+        <header>
+          <div>
+            <h3 class="role">${item.role}</h3>
+            <p>${item.org}</p>
+          </div>
+          <span class="period">${item.period}</span>
+        </header>
+        <p>${item.summary}</p>
+      </article>
+    `
+  )
+  .join("");
+
+document.getElementById("education-list").innerHTML = education
   .map(
     (item) => `
       <article class="timeline-item">
